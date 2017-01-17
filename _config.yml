@@ -9,10 +9,10 @@ theme: minimal-mistakes-jekyll
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "MedFd"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Fernando Medina"
+description              : "A personal place where I can rest"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,9 +79,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "MedFd"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Informatico, Deportista. Me gusta experimentar, superar retos"
   location         : "Somewhere"
   email            :
   uri              :
@@ -89,7 +89,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : Med.FerD
   foursquare       :
   github           :
   google_plus      :
@@ -100,9 +100,9 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
+  steam            : medfd
   tumblr           :
-  twitter          :
+  twitter          : FdMed
   vine             :
   weibo            :
   xing             :
