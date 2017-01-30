@@ -5,14 +5,12 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-theme: minimal-mistakes-jekyll
-
 # Site Settings
 locale                   : "en"
-title                    : "MedFd"
+title                    : "Site Title"
 title_separator          : "-"
-name                     : "Fernando Medina"
-description              : "A personal place where I can rest"
+name                     : "Your Name"
+description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -79,9 +77,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "MedFd"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Dame un r eto"
+  bio              : "I am an amazing person."
   location         : "Somewhere"
   email            :
   uri              :
@@ -89,7 +87,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : Med.FerD
+  facebook         :
   foursquare       :
   github           :
   google_plus      :
@@ -100,9 +98,9 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            : medfd
+  steam            :
   tumblr           :
-  twitter          : FdMed
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -246,20 +244,3 @@ defaults:
       comments: # true
       share: true
       related: true
-      
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-author_profile: true
-
-  # _proyects
-  - scope:
-      path: ""
-      type: proyects
-    values:
-      layout: single
-      author_profile: false
-      share: true
