@@ -5,16 +5,16 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-theme                    : "minimal-mistakes-jekyll"
+theme: minimal-mistakes-jekyll
 
 # Site Settings
 locale                   : "en"
-title                    : "dev_MM"
+title                    : "MedFd"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "Minimal Mistakes theme test."
+name                     : "Fernando Medina"
+description              : "A personal place where I can rest"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/test"
+baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -32,12 +32,12 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : # "master", "gh-pages"
+  branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
-  path                   : "_data/comments/{options.slug}"
+  path                   : "docs/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
   requiredFields         : ['name', 'email', 'message']
   transforms:
     email                : "md5"
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "mmistakes"
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -79,9 +79,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  name             : "MedFd"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Dame un r eto"
   location         : "Somewhere"
   email            :
   uri              :
@@ -89,7 +89,7 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : Med.FerD
   foursquare       :
   github           :
   google_plus      :
@@ -100,9 +100,9 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            :
+  steam            : medfd
   tumblr           :
-  twitter          : "mmistakes"
+  twitter          : FdMed
   vine             :
   weibo            :
   xing             :
@@ -137,6 +137,8 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -231,19 +233,6 @@ compress_html:
     envs: development
 
 
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-
 # Defaults
 defaults:
   # _posts
@@ -254,35 +243,22 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comments: # true
       share: true
       related: true
+      
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
-  # _recipes
+author_profile: true
+
+  # _proyects
   - scope:
       path: ""
-      type: recipes
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: true
-      share: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
+      type: proyects
     values:
       layout: single
       author_profile: false
